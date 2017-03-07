@@ -1,0 +1,89 @@
+%%
+% The Undercover Economist - Book & Chapter Summary, for the English course "Selling Technology".
+%
+% (C) 2017 by Marcel Stocker, University of Applied Sciences Rapperswil, Switzerland
+%%
+
+\documentclass[a4paper,12pt,parskip]{scrreprt}
+
+%% Load packages
+%% ========
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage[]{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[german=quotes]{csquotes}
+\onehalfspacing
+
+\geometry{papersize={210mm,297mm},total={160mm,240mm},top=31mm,bindingoffset=15mm}
+
+%% Own variables
+%% ========
+\newcommand{\documentauthors}{Marcel Stocker}
+\newcommand{\documenttitel}{The Undercover Economist, by Tim Harford}
+\newcommand{\documentsubtitel}{Book \& Chapter Summary}
+
+%% PDF meta informations
+%% ========
+\hypersetup{
+	pdfauthor={Marcel Stocker},
+	pdftitle={The Undercover Economist, by Tim Harford},
+	pdfsubject={Book and Chapter Summary},
+	pdfkeywords={English, BEC, HSR},
+	pdfproducer={LaTeX},
+	pdfcreator={pdfLaTeX}
+}
+
+\begin{document}
+
+\author{
+  Stocker, Marcel
+}
+
+\begin{titlepage}
+	\centering
+	\includegraphics[width=0.5\textwidth]{images/HSR_Logo_CMYK.jpg}\par\vspace{1cm}
+	{\scshape\LARGE University of Applied Sciences Rapperswil \par}
+	\vspace{1cm}
+	{\scshape\Large \documenttitel \par}
+	\vspace{0.5cm}
+	{\huge\bfseries \line(1,0){400} \\ \documentsubtitel \\ \line(1,0){400} \par}
+	\vspace{2cm}
+	{\Large\itshape \documentauthors \par}
+
+	\vfill
+
+% Bottom of the page
+	{\large \today\par}
+\end{titlepage}
+
+\tableofcontents
+
+%% All content of this work
+\chapter{Introduction \& Chapter One}
+	\input{chapters/0-1}
+\chapter{Chapter Two}
+	\input{chapters/2}
+\chapter{Chapter Three}
+	\input{chapters/3}
+\chapter{Chapter Four}
+	\input{chapters/4}
+\chapter{Chapter Five}
+	\input{chapters/5}
+\chapter{Chapter Six \& Seven}
+	\input{chapters/6-7}
+\chapter{Chapter Eight}
+	\input{chapters/8}
+\chapter{Chapter Nine}
+	\input{chapters/9}
+\chapter{Chapter Ten}
+	\input{chapters/10}
+
+\end{document}
